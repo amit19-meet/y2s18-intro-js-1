@@ -9,6 +9,11 @@
     <h1>JavaScript Arrays</h1>
 
     <script>
+    	var fav_meet_things= prompt("what are three things you're excited for in meet?");
+    	fav_meet_things= fav_meet_things.split(", ");
+    	fav_meet_things= fav_meet_things.sort();
+    	fav_meet_things.join(", ");
+    	document.write(fav_meet_things);
 // your code goes here
     </script>
 </body>
