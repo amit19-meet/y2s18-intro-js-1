@@ -14,7 +14,22 @@ function isLetter(char) {
     char = char.toLowerCase();
     return "abcdefghijklmnopqrstuvwxyz".indexOf(char) >= 0;
 }
+function Ispalindrome(sentence) {
+	var sentence= sentence.split();
+		for (var i=0; i<sentence.length; i++) {
+		if (sentence.charAt(i)==sentence.reverse(i)) {
+			return true
+		}
+		else {
+			return false
+		}
+	}
 
+
+
+
+}
+Ispalindrome()
 // Write your isPalindrome function here!
 
     </script>
