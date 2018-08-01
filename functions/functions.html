@@ -14,22 +14,32 @@ function isLetter(char) {
     char = char.toLowerCase();
     return "abcdefghijklmnopqrstuvwxyz".indexOf(char) >= 0;
 }
-function Ispalindrome(sentence) {
-	var sentence= sentence.split();
-		for (var i=0; i<sentence.length; i++) {
-		if (sentence.charAt(i)==sentence.reverse(i)) {
-			return true
-		}
-		else {
-			return false
-		}
+function IsPalindrome(sentence) {
+	
+	var array= sentence.split("");
+	array= array.reverse();
+	console.log(array)
+	array= array.join("");
+	console.log(array)
+	if (array==sentence) {
+		return true;
+	}
+	else {
+		return false;
 	}
 
-
-
-
+		
 }
-Ispalindrome()
+var question= prompt("Is this a palindrome?");
+
+
+
+
+
+
+var ANSWER= IsPalindrome(question);
+alert(ANSWER);
+
 // Write your isPalindrome function here!
 
     </script>
